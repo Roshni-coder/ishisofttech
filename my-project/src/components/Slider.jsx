@@ -4,10 +4,10 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 // Import images
-import banner1 from "../../public/mainbanner.jpg";
-import banner4 from "../../public/mainthree.jpg";
-import banner2 from "../../public/maintwo.jpg";
-import banner3 from "../../public/four.jpg";
+import banner1 from "../../public/main.jpg";
+import banner4 from "../../public/r.jpg";
+// import banner2 from "../../public/maintwo.jpg";
+// import banner3 from "../../public/four.jpg";
 
 const slides = [
   {
@@ -22,18 +22,18 @@ const slides = [
     highlight: "Smart Digital Solutions",
     desc: "Web Development, Mobile Apps, Cloud Solutions and AI powered systems built for excellence."
   },
-  {
-    image: banner2,
-    title: "We Build",
-    highlight: "Smart Digital Solutions",
-    desc: "Web Development, Mobile Apps, Cloud Solutions and AI powered systems built for excellence."
-  },
-  {
-    image: banner3,
-    title: "Grow Your",
-    highlight: "Business With Technology",
-    desc: "Helping companies scale faster with modern software and expert IT consulting services."
-  },
+  // {
+  //   image: banner2,
+  //   title: "We Build",
+  //   highlight: "Smart Digital Solutions",
+  //   desc: "Web Development, Mobile Apps, Cloud Solutions and AI powered systems built for excellence."
+  // },
+  // {
+  //   image: banner3,
+  //   title: "Grow Your",
+  //   highlight: "Business With Technology",
+  //   desc: "Helping companies scale faster with modern software and expert IT consulting services."
+  // },
 ];
 
 const TechBanner = () => {
@@ -47,7 +47,7 @@ const TechBanner = () => {
   }, []);
 
   return (
-    <section className="relative h-[85vh] md:h-[75vh] lg:h-[80vh] w-full overflow-hidden bg-slate-950 font-['Plus_Jakarta_Sans']">
+    <section className="relative h-[75vh] md:h-[75vh] lg:h-[75vh] w-full overflow-hidden bg-slate-950 font-['Plus_Jakarta_Sans']">
       
       {/* Background Layer */}
       <div className="absolute inset-0 z-0">
@@ -64,7 +64,7 @@ const TechBanner = () => {
         </AnimatePresence>
         
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-1" />
-        <div className="absolute inset-0 bg-black/20 z-1" />
+        {/* <div className="absolute inset-0 bg-black/20 z-1" /> */}
       </div>
 
       {/* Content Container */}
@@ -80,7 +80,7 @@ const TechBanner = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex flex-col items-center lg:items-start"
             >
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-2">
                 <span className="h-2 w-2 rounded-full bg-orange-500 animate-ping" />
                 <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-orange-100 font-bold">
                   Innovation for the future
@@ -95,11 +95,11 @@ const TechBanner = () => {
                 </span>
               </h1>
 
-              <p className="mt-6 text-slate-200 text-sm md:text-lg lg:text-xl max-w-xl leading-relaxed font-medium opacity-90">
+              <p className="mt-4 text-slate-200 text-sm md:text-lg lg:text-xl max-w-xl leading-relaxed font-medium opacity-90">
                 {slides[index].desc}
               </p>
 
-              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full sm:w-auto">
+              <div className="mt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full sm:w-auto">
                 <Link to="/products" className="w-full sm:w-auto">
                   <button className="group w-full flex items-center justify-center gap-3 bg-orange-600 text-white px-8 py-4 rounded-full text-sm font-bold hover:bg-orange-500 transition-all shadow-lg active:scale-95">
                     Explore Solutions

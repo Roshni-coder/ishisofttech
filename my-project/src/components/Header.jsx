@@ -36,7 +36,7 @@ function Header() {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 px-6 lg:px-12 ${
         useLightVersion 
           ? "bg-white/80 backdrop-blur-md  py-5" 
-          : "bg-white/40 backdrop-blur-md  py-5"
+          : "bg-transparent backdrop-blur-md  py-5"
       }`}
     >
       <div className="max-w-[1300px] mx-auto flex items-center justify-between px-2">

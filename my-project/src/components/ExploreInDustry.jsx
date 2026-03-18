@@ -109,43 +109,7 @@ const FocusIndustries = () => {
 
               {/* STATS CARD */}
 
-              <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-4 sm:left-6 md:left-8 right-4 sm:right-6 md:right-8 bg-white/10 backdrop-blur-md p-5 sm:p-6 md:p-8 rounded-2xl border border-white/40 shadow-xl">
-
-                <div className="grid grid-cols-2 gap-4 md:gap-8">
-
-                  <div>
-                    <p className="text-[9px] md:text-[10px] font-bold text-amber-400 uppercase tracking-widest mb-1">
-                      Experience
-                    </p>
-
-                    <p className="text-2xl md:text-3xl font-black text-white">
-                      12+
-                    </p>
-
-                    <p className="text-[10px] md:text-xs mt-1 text-slate-100">
-                      Years in Market
-                    </p>
-                  </div>
-
-                  <div className="border-l border-slate-200 pl-4 md:pl-8">
-
-                    <p className="text-[9px] md:text-[10px] font-bold text-amber-400 uppercase tracking-widest mb-1">
-                      Impact
-                    </p>
-
-                    <p className="text-2xl md:text-3xl font-black text-white">
-                      98%
-                    </p>
-
-                    <p className="text-[10px] md:text-xs mt-1 text-slate-100">
-                      Client Retention
-                    </p>
-
-                  </div>
-
-                </div>
-
-              </div>
+             
 
             </motion.div>
 
