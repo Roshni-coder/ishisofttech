@@ -30,10 +30,7 @@ function Contact() {
   setStatus("loading");
 
   try {
-   const res = await axios.post(
-  `${process.env.REACT_APP_API_URL}/api/contact`,
-  formData
-);
+   const res = await axios.post("/api/contact", formData);
 
     if (res.data.success) {
       setStatus("success");
