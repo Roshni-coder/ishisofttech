@@ -47,7 +47,7 @@ const TechBanner = () => {
   }, []);
 
   return (
-    <section className="relative h-[75vh] md:h-[75vh] lg:h-[75vh] w-full overflow-hidden bg-slate-950 font-['Plus_Jakarta_Sans']">
+    <section className="relative h-[60vh] md:h-[75vh] lg:h-[75vh] w-full overflow-hidden bg-slate-950 font-['Plus_Jakarta_Sans']">
       
       {/* Background Layer */}
       <div className="absolute inset-0 z-0">
