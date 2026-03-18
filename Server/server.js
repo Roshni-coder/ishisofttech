@@ -10,8 +10,12 @@ const app = express();
 
 // ✅ Allow frontend domain
 app.use(cors({
-  origin: process.env.CLIENT_URL,
-  methods: ['POST']
+  origin: [
+    "https://ishisofttech.com",
+    "https://www.ishisofttech.com"
+  ],
+  methods: ["GET", "POST"],
+  credentials: true
 }));
 app.use(express.json());
 
@@ -43,7 +47,7 @@ function sendMail(name, email, phone, msg) {
 }
 
 // ✅ Contact API endpoint
-app.post('/contact', async (req, res) => {
+app.post('/api/contact', async (req, res) => {
   const { name, email, phone, msg } = req.body;
 
   try {

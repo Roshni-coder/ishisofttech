@@ -31,7 +31,7 @@ function Contact() {
 
   try {
    const res = await axios.post(
-  `${process.env.REACT_APP_API_URL}/contact`,
+  `${process.env.REACT_APP_API_URL}/api/contact`,
   formData
 );
 
